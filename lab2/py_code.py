@@ -3,7 +3,7 @@ def min_edit_distance(word1, word2):
     len2 = len(word2)
 
     # Create a 2D array to store the distances
-    dp = [[0 for _ in range(len2 + 1)] for _ in range(len1 + 1)]
+    dp = [[0 for space in range(len2 + 1)] for space in range(len1 + 1)]
 
     # Initialize the first row and column
     for i in range(len1 + 1):

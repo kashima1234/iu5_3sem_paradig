@@ -10,6 +10,8 @@ int set_min(int a, int b, int c)
 
 }
 
+//Variables m and n store the lengths of the input strings s1 and s2 respectively. An array d of size (m + 1) x (n + 1) is created to store intermediate distances during the computation.
+
 
 int set_levenshtein_dist(const char *s1, const char *s2)
 {
@@ -21,7 +23,7 @@ int set_levenshtein_dist(const char *s1, const char *s2)
         d[i][0] = i;
     for (int j = 0; j <= n; j++) 
         d[0][j] = j;
-
+//d loop
     for (int j = 1; j <= n; j++) 
     {
         for (int i = 1; i <= m; i++) 

@@ -8,7 +8,7 @@
 
 int main()
 {
-    const int max_length = 100; 
+    const int max_length = 10; 
     char s1[max_length], s2[max_length];
 
    if (!get_user_input(s1, s2, max_length))
