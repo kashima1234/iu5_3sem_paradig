@@ -24,12 +24,16 @@ def min_edit_distance(word1, word2):
 def get_user_input():
     word1 = input("Enter the first word: ")
     word2 = input("Enter the second word: ")
-    max_length = 100  # Maximum allowed length for input words
+    max_length = 10  # Maximum allowed length for input words
 
     if len(word1) >= max_length or len(word2) >= max_length:
         print(f"Error: Input words are too long. Maximum allowed length is {max_length} characters.")
         return None, None
-
+    
+    if any(char.isdigit() for char in word1) or any(char.isdigit() for char in word2):
+        print("Error: Input words contain numbers.")
+        return None, None
+    
     return word1, word2
 
 if __name__ == "__main__":

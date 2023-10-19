@@ -2,10 +2,6 @@
 #include "set_operation.h"
 #include "set_input.h"
 
-
-
-
-
 int main()
 {
     const int max_length = 10; 
