@@ -1,4 +1,3 @@
-
 def field(items, *args):
     filtered_item = []
     for item in items:
