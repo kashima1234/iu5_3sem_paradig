@@ -35,8 +35,11 @@ def handle_response(text: str) -> str:
     if 'how are you' in processed:
         return 'I\'m fine, thank you!'
     
-    if 'i love you' in processed:
-        return 'I hate you-_-'
+    if 'do you love me' in processed:
+        return 'No one loves you -_-'
+    
+    if 'what kind of help can you do?' in processed:
+        return 'Nothing -_-'
     
     return 'I don\'t understand that.'
 
